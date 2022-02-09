@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- main tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacje o stronie</title>
+    <meta name="description" content="Strona opowiada o wielu ciekawych zagadnieniach związanych z liczbami pierwszymi, o rodzajch liczb pierwszych, algorytmach służących do ich szukania oraz ich występowaniu. Dowiedzieć się możesz również o wielu ciekawostkach oraz o tezach zwiazanych z liczbami pierwszymi. Zapraszam!">
+    <meta name="keywords" content="liczby pierwsze, rodzaje liczb pierwszych, algorytmy, algorytmy liczb pierwszych, zastosowanie liczb pierwszych, poszukiwania, poszukiwania liczb pierwszych, ciekawostki, ciekawostki o liczbach pierwszych, ciekawostki liczby pierwsze, rodzaje, rodzaje liczb, rodzaje liczb pierwszych"/>
+    <meta name="author" content="Radosław Rzepka"/>
+    <meta name="copyright" content="Copyright owner"/>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- script -->
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/arrow.js" defer></script>
+
+    <!-- preload -->
+    <link rel="preload" as="image" href="./images/slider/slider-img1.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img2.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img3.jpg">   
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation" id="navigation">
+            <a href="index.html"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <a href="ostronie.html" class="navigation__list__item--link">O stronie</a>
+                </li> 
+                <li class="navigation__list__item">
+                    <a href="rodzaje.html" class="navigation__list__item--link">Rodzaje</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="algorytmy.html" class="navigation__list__item--link">Algorytmy</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="zastosowania.html" class="navigation__list__item--link">Zastosowania</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="rozmieszczenie.html" class="navigation__list__item--link">Rozmieszczenie</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="ciekawostki.html" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
+            </ul>
+            <div class="header__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <a class="header__button" href="#rodzaje">Rodzaje liczb pierwszych</a>
+        <div class="header__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <img src="./images/icons/arrow.svg" alt="left arrow" class="header__arrow header__arrow--left">
+        <img src="./images/icons/arrow.svg" alt="right arrow" class="header__arrow header__arrow--right">
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="section__text">
+                <h1 class="section__text--main-header" id="o-stronie">O stronie</h1>
+
+                <p class="section__text--paragraph"> Strona powstała przy użyciu programów oraz źródeł niekomercyjnych, w ramach XIII edycji konkursu "Zobaczyć Matematykę" organizowanym przez Akademię Górniczo-Hutniczą im. Stanisława Staszica w Krakowie. Strona ta opisuje zagadnienia związane z liczbami pierwszymi. Poruszyłem na niej takie tematy jak: rozmieszczenie liczb pierwszych, rodzaje liczb pierwszych, algorytmy znajdujące liczby pierwsze, zastosowanie liczb pierwszych oraz hipotezy i problemy, które są z liczbami pierwszymi są związane.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">O autorze</h2>
+
+                <p class="section__text--paragraph">Nazywam się Radosław Rzepka mam 18 lat i jestem uczniem Zespołu Szkół Techniczno-Informatycznych w Gliwicach. Kształcę się na profilu technik informatyk.</p>
+
+                <p class="section__text--paragraph">Z tworzeniem stron i aplikacji internetowych łącze swoją przyszłość. Według mnie podczas tworzenia stron i projektów duże znaczenie ma: użyteczność, estetyka, wydajność oraz dostępność stron na każdym urządzeniu. Ważna jest również dostępność strony dla każdego użytkownika, aby osoby z dysfunkcjami mogły swobodnie korzystać z moich stron.</p>
+            </div>
+            <figure class="section__figure">
+                <img src="./images/autor.jpg" alt="Zdjęcie autora strony" class="section__figure__image">
+            </figure>
+        </section>
+
+        <section class="section section__technologies">
+            <div class="section__technologies--div">
+                <h2 class="section__technologies--header">Użyte technologie i programy</h2>
+                <a class="section__technologies--link" href="https://www.w3.org/html/" target="_blank" rel="noreferrer">HTML</a>
+                <a class="section__technologies--link" href="https://sass-lang.com" target="_blank" rel="noreferrer">SASS</a>
+                <a class="section__technologies--link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank" rel="noreferrer">Java Script</a>
+                <a class="section__technologies--link" href="https://git-scm.com" target="_blank" rel="noreferrer">GIT</a>
+                <a class="section__technologies--link" href="https://code.visualstudio.com" target="_blank" rel="noreferrer">Visual Studio Code</a>
+                <a class="section__technologies--link" href="https://www.gimp.org" target="_blank" rel="noreferrer">Gimp</a>
+                <a class="section__technologies--link" href="https://inkscape.org" target="_blank" rel="noreferrer">Inkspace</a>
+            </div>
+
+            <div class="section__technologies--div">
+                <h2 class="section__technologies--header">Źródła zdjęć i fontów</h2>
+                <a class="section__technologies--link" href="https://fonts.google.com" target="_blank" rel="noreferrer">Google Fonts</a>
+                <a class="section__technologies--link" href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_główna" target="_blank" rel="noreferrer">Wikipedia</a>
+                <a class="section__technologies--link" href="https://commons.wikimedia.org/wiki/Strona_główna" target="_blank" rel="noreferrer">Wikipedia Commons</a>
+                <a class="section__technologies--link" href="https://pixabay.com/pl/" target="_blank" rel="noreferrer">Pixabay (drugie zdjęcie slidera)</a>
+                <a class="section__technologies--link" href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash (pierwsze i trzecie zdjęcie slidera)</a>
+            </div>
+        </section>
+
+        <img src="./images/icons/arrow-side.svg" class="arrow-image closed" alt="Strzałka prowadząca na górę strony">  
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
+    </footer>
+    
+</body>
+
+</html>

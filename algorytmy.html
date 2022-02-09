@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- main tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorytmy liczb pierwszych</title>
+    <meta name="description" content="Strona opowiada o wielu ciekawych zagadnieniach związanych z liczbami pierwszymi, o rodzajch liczb pierwszych, algorytmach służących do ich szukania oraz ich występowaniu. Dowiedzieć się możesz również o wielu ciekawostkach oraz o tezach zwiazanych z liczbami pierwszymi. Zapraszam!">
+    <meta name="keywords" content="liczby pierwsze, rodzaje liczb pierwszych, algorytmy, algorytmy liczb pierwszych, zastosowanie liczb pierwszych, poszukiwania, poszukiwania liczb pierwszych, ciekawostki, ciekawostki o liczbach pierwszych, ciekawostki liczby pierwsze, rodzaje, rodzaje liczb, rodzaje liczb pierwszych, sprawdzanie liczb pierwszych, podzielność liczb pierwszych, Sito Eratostenesa, Test Lucasa-Lehmera"/>
+    <meta name="author" content="Radosław Rzepka"/>
+    <meta name="copyright" content="Copyright owner"/>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- script -->
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/arrow.js" defer></script>
+    <script src="./js/lucas-test.js" defer></script>
+    <script src="./js/prime-test.js" defer></script>
+    <script src="./js/eratostenes-sieve.js" defer></script>
+
+    <!-- preload -->
+    <link rel="preload" as="image" href="./images/slider/slider-img1.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img2.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img3.jpg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation" id="navigation">
+            <a href="index.html"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <a href="ostronie.html" class="navigation__list__item--link">O stronie</a>
+                </li> 
+                <li class="navigation__list__item">
+                    <a href="rodzaje.html" class="navigation__list__item--link">Rodzaje</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="algorytmy.html" class="navigation__list__item--link">Algorytmy</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="zastosowania.html" class="navigation__list__item--link">Zastosowania</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="rozmieszczenie.html" class="navigation__list__item--link">Rozmieszczenie</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="ciekawostki.html" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
+            </ul>
+            <div class="header__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <a class="header__button" href="#rodzaje">Rodzaje liczb pierwszych</a>
+        <div class="header__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <img src="./images/icons/arrow.svg" alt="left arrow" class="header__arrow header__arrow--left">
+        <img src="./images/icons/arrow.svg" alt="right arrow" class="header__arrow header__arrow--right">
+    </header>
+
+    <main class="main">
+
+        <section class="section">
+            <div class="section__text">
+                <h1 class="section__text--main-header" id="algorytmy">Algorytmy liczb pierwszych</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text prime-test-div">
+                <h2 class="section__text--sidebar-header">Sprawdzenie pierwszości poprzez sprawdzenie podzielności</h2>
+
+                <p class="section__text--paragraph">Najprostszą metodą aby zbadać czy liczba jest pierwsza jest sprawdzenie jej dzielników. Aby zbadać liczbę <span class="section__text--math">n</span> sprawdzamy kolejne liczby naturalne należące do przedziału <span class="section__text--math">[2,..., &radic;n]</span>.</p>
+
+                <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielnikiem naszej liczby <span class="section__text--math">n</span>, oznacza to, że nasza liczba nie jest pierwsza.</p>
+
+                <p class="section__text--paragraph">Jednak teraz pojawia się pytanie dlaczego wystarczy sprawdzić tylko liczby od <span class="section__text--math">2 do &radic;n</span></p>
+
+                <p class="section__text--paragraph">Przenalizujmy to na przykładzie liczb: 23, 33 i 36.</p>
+
+                <p class="section__text--math">&radic;23 &asymp; 4,8</p>
+
+                <p class="section__text--math">D<sub>23</sub> = {1, |4,8|, 23}</p>
+
+                <p class="section__text--math">&radic;33 &asymp; 5,7</p>
+
+                <p class="section__text--math">D<sub>33</sub> = {1, 3, |5,7|, 11, 33}</p>
+
+                <p class="section__text--math">&radic;36 = 6</p>
+
+                <p class="section__text--math">D<sub>36</sub> = {1, 2, 3, 4, 6, 9, 12, 18, 36}</p>
+
+                <p class="section__text--paragraph">Można łatwo zauważyć, że liczba <span class="section__text--math">n</span> ma tyle samo dzielników większych <span class="section__text--math"> &radic;n</span> jak i mniejszych od <span class="section__text--math"> &radic;n</span>. Dzięki tym przykładom można zauważyć, że jeśli jedynym dzielnikiem mniejszym lub równym <span class="section__text--math">&radic;n</span> jest 1 to liczba ta jest pierwsza.</p>
+
+                <p class="section__text--paragraph">Powyższą metodą można sprawdzić pierwszość każdej liczby naturalnej większej od 1, jednak w porównaniu do <a href="#lucas-test">testu Lucasa-Lehmera</a> czas wykonania tego algorytmu dla bardzo dużych liczb jest dłuższy.</p>
+
+                <p class="section__text--paragraph">Poniżej można wpisać dowolną liczbę i sprawdzić to czy jest pierwsza oraz to jak działa ten algorytm.</p>
+
+                <p class="section__text--paragraph"><i>(Dla n &lt; 1 000 000, wyświetlany jest cały algorytm, a w przypadku n &ge; 1 000 000 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania.)</i>.</p>
+
+                <label for="prime-test">Podaj liczbę, której pierwszość mam sprawdzić: </label>
+
+                <input type="number" class="section__text--input prime-test-input" id="prime-test"> <br>
+                
+                <button type="button" class="section__text--button prime-test-button">Sprawdź</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text eratostenes-div">
+                <h2 class="section__text--sidebar-header">Sito Eratostenesa</h2>
+
+                <p class="section__text--paragraph">Sito Eratostenesa jest to algorytm przypisywany Eratostenesowi z Cyreny wymyślony już w III w. p.n.e. służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span>.</p>
+
+                <p class="section__text--paragraph">Działanie sita polega na wybraniu ze zbioru <span class="section__text--math"> [2;n]</span> najmniejszej liczby czyli 2 i wykreśleniu wszystkich jej wielokrotności większej od niej, czyli <span class="section__text--math">4,6,8,10,....</span>.</p>
+
+                <p class="section__text--paragraph">Z pozostałych liczb wybieramy kolejną najmniejszą nie wykreśloną czyli 3 i ponownie wykreślamy wszystkie jej wielokrotności czyli: <span class="section__text--math">6,9,12,15,....</span>. Niektóre liczby takie jak 6 lub 12 będą skreślone jeszcze raz czym się nie przejmujemy.</p>
+
+                <p class="section__text--paragraph">Tak samo robimy z kolejną najmniejszą niewykreśloną liczbą czyli 5.</p>
+
+                <p class="section__text--paragraph">Proces powtarzamy tak długo, gdy liczba <span class="section__text--math">i</span>, której wielokrotności chcemy wykreślać jest większa od <span class="section__text--math"> &#8730;n</span>.</p>
+
+                <p class="section__text--paragraph">Dla danej liczby <span class="section__text--math">n</span> wszystkie wykreślonej liczby mniejsze lub równe <span class="section__text--math">n</span> są liczbami pierwszymi.</p>
+
+                <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image"><br>
+
+                <p class="section__text--paragraph">Poniżej można wpisać dowolną liczbę <span class="section__text--math">n</span>, dla której sito znajdzie wszystkie liczby pierwsze mniejsze lub równe <span class="section__text--math">n</span></p>
+
+                <label for="eratostenes-input">Podaj liczbę <span class="section__text--math">n</span> do której mam wyznaczyć wszystkie liczby pierwsze sitem Eratostenesa: </label>
+
+                <input type="number" class="section__text--input eratostenes-input" id="eratostenes-input"> <br>
+                
+                <button type="button" class="section__text--button eratostenes-button">Wyznacz</button>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Eratostenes.jpg" alt="Zdjęcie Eratostenesa" class="section__figure__image">
+                <figcaption class="section__figure__description">Eratostenes</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text lucas-test-div">
+                <h2 class="section__text--sidebar-header" id="lucas-test">Test Lucasa-Lehmera</h2>
+
+                <p class="section__text--paragraph">Test Lucasa-Lehmera jest testem pierwszości dla <a href="rodzaje.html#liczby-mersenne" target="_blank">liczb Mersenne'a</a>. Test ten został ułożony przez Edwarda Lucasa w 1856, a następnie ulepszony przez niego w 1878. Podany wniosek stwierdzał, że liczba <span class="section__text--math">2<sup>p</sup>-1</span> jest liczbą pierwszą wtedy gdy jest dzielnikiem liczby wyrazu <span class="section__text--math">L<sub>p-1</sub></span> ciągu określonego następująco:</p>
+
+                <p class="section__text--math">L<sub>1</sub>=4</p>
+
+                <p class="section__text--math">L<sub>n</sub>= L<sub>n-1</sub><sup>2</sup>-2</p>  
+
+                <p class="section__text--paragraph">Nie wiadomo, jak Lucas wymyślił tę własność. Nie potrafił jej również w żaden sposób udowodnić.</p>
+                    
+                <p class="section__text--paragraph"> Warunek podany przez Lucasa został udowodniony dopiero w XX wieku przez Amerykanina Derricka Henry'ego Lehmera i od tego czasu nosił nazwą <strong>testu Lucasa-Lehmera</strong>.</p>
+                    
+                <p class="section__text--paragraph">Ten właśnie test jest wykorzystywany przez serwis GIMPS do znajdowania dużych liczb pierwszych Mersenne’a.</p>
+                   
+                <p class="section__text--paragraph">Zaletą tego algorytmu są takie, że działa bardzo szybko i dla przykłady liczbę <span class="section__text--math">2<sup>89</sup>-1</span> posiadającą 27 cyfr potrafi określić jako liczbę pierwszą w ciągu 1ms! </p>
+
+                <p class="section__text--paragraph">Jego główną wadą jest fakt, że używać można go tylko dla liczb Mersenne’a.</p>
+
+                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę <span class="section__text--math">n</span>, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
+
+                <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i>.</p>
+
+                <label for="lucas-input">Podaj którą liczbę Mersenne’a mam sprawdzić: </label>
+
+                <input type="number" class="section__text--input lucas-test-input" id="lucas-input"> <br>
+                
+                <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
+                <figcaption class="section__figure__description">Edward Lucas</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+
+                <img src="./images/Derrick Henry Lehmer.jpg" alt="Zdjęcie Derrick Henry'ego Lehmera" class="section__figure__image">
+                <figcaption class="section__figure__description">Derrick Henry Lehmer</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, autor: George M. Bergman , licencja: CC BY-SA 4.0)</figcaption>
+            </figure>
+        </section>
+
+    <img src="./images/icons/arrow-side.svg" class="arrow-image closed" alt="Strzałka prowadząca na górę strony">  
+    
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
+    </footer>
+    
+</body>
+
+</html>

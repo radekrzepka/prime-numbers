@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- main tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciekawostki i hipotezy o liczbach pierwszych</title>
+    <meta name="description" content="Strona opowiada o wielu ciekawych zagadnieniach związanych z liczbami pierwszymi, o rodzajch liczb pierwszych, algorytmach służących do ich szukania oraz ich występowaniu. Dowiedzieć się możesz również o wielu ciekawostkach oraz o tezach zwiazanych z liczbami pierwszymi. Zapraszam!">
+    <meta name="keywords" content="liczby pierwsze, rodzaje liczb pierwszych, algorytmy, algorytmy liczb pierwszych, zastosowanie liczb pierwszych, poszukiwania, poszukiwania liczb pierwszych, ciekawostki, ciekawostki o liczbach pierwszych, ciekawostki liczby pierwsze, rodzaje, rodzaje liczb, rodzaje liczb pierwszych, największe liczby pierwsze, hipoteza Goldbacha, wzory liczb pierwszych, twierdzenie Fermata"/>
+    <meta name="author" content="Radosław Rzepka"/>
+    <meta name="copyright" content="Copyright owner"/>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- script -->
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/arrow.js" defer></script>
+
+    <!-- preload -->
+    <link rel="preload" as="image" href="./images/slider/slider-img1.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img2.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img3.jpg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation" id="navigation">
+            <a href="index.html"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <a href="ostronie.html" class="navigation__list__item--link">O stronie</a>
+                </li> 
+                <li class="navigation__list__item">
+                    <a href="rodzaje.html" class="navigation__list__item--link">Rodzaje</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="algorytmy.html" class="navigation__list__item--link">Algorytmy</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="zastosowania.html" class="navigation__list__item--link">Zastosowania</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="rozmieszczenie.html" class="navigation__list__item--link">Rozmieszczenie</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="ciekawostki.html" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
+            </ul>
+            <div class="header__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <a class="header__button" href="#rodzaje">Rodzaje liczb pierwszych</a>
+        <div class="header__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <img src="./images/icons/arrow.svg" alt="left arrow" class="header__arrow header__arrow--left">
+        <img src="./images/icons/arrow.svg" alt="right arrow" class="header__arrow header__arrow--right">
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="section__text">
+                <h1 class="section__text--main-header" id="ciekawostki">Ciekawostki i hipotezy</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">Największe liczby pierwsze</h2>
+
+                <p class="section__text--paragraph">Aktualnie największą znaną liczbą pierwszą jest 51 <a href="#liczby-mersenne">liczba pierwsza Mersenne’a</a>: <span class="section__text--math">2<sup>82589933</sup> - 1</span> odkryta 7 grudnia 2018 roku, której zapis dziesiętny liczby 24 862 048 cyfr.</p>
+
+                <p class="section__text--paragraph">Aktualnie osiem największych znanych liczb pierwszych są to liczby pierwsze Mersenne’a. Największą znaną liczbą pierwszą, która nie jest liczbą pierwszą Mersenne’a jest:</p>
+
+                <p class="section__text--math">10223*2<sup>31172165</sup> + 1</p>
+
+                <p class="section__text--paragraph">Została odkryta 31 października 2016 roku w ramach projektu PrimeGrid, a jej zapis dziesiętny liczy 9 383 761 cyfr.</p>
+
+                <p class="section__text--paragraph">Największą liczbą pierwszą poznaną przed erą elektroniki jest liczba Ferriera znaleziona w 1951 roku przez Francuza Aimé Ferriera.</p>
+
+                <p class="section__text--math"><img src="./images/liczba ferriera.svg" alt="Liczba Ferriera" class="section__text--ferrier-image"></p>
+
+                <p class="section__text--paragraph">Posiada ona 44 cyfry oraz znaleziona została za pomocą mechanicznego kalkulatora.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">Problemy i hipotezy</h2>
+
+                <p class="section__text--paragraph">Choć wiele już wiemy o liczbach pierwszych wciąż jest wiele twierdzeń i hipotez, które jeszcze nie zostały udowodnione: </p>
+
+                <ul class="section__text--list">
+                    <li><a href="#hipoteza-goldbacha">Hipoteza Goldbacha</a>: czy każda liczba parzysta większa od 2 może być przedstawiona w postaci sumy dwóch liczb pierwszych?</li>
+                    <li>Czy dla każdego n istnieje liczba pierwsza pomiędzy <span class="section__text--math">n<sup>2</sup></span> i <span class="section__text--math">(n+1)<sup>2</sup></span>.</li>
+                    <li>Czy <a href="rodzaje.html#liczby-mersenne" target="_blank">liczb pierwszych Mersenne’a</a> jest nieskończenie wiele?</li>
+                    <li>Czy <a href="rodzaje.html#liczby-blizniacze" target="_blank">liczb pierwszych bliźniaczych</a> jest nieskończenie wiele?</li>
+                    <li>Czy <a href="rodzaje.html#liczby-germain" target="_blank"> liczb pierwszych Germain </a> jest nieskończenie wiele?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header" id="hipoteza-goldbacha">Hipoteza Goldbacha</h2>
+
+                <p class="section__text--paragraph">W 1742 roku w liście do Leonharda Eulera, Christian Goldbach przedstawił hipotezę, że</p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Każda nieparzysta liczba naturalna większa niż 5 może być przedstawiona w postaci sumy trzech liczb pierwszych (ta sama liczba pierwsza może być użyta dwukrotnie).</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Euler po otrzymaniu listu stwierdził, że hipotezę tę można uprościć i przedstawić w następujący sposób: </p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Każda liczba naturalna parzysta większa od 2 jest sumą dwóch liczb pierwszych.</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Powyższą hipotezę, do dzisiaj nazywaną "hipotezą Goldbacha", sformułował w rezultacie Euler, jednakże nazwa nie została zmieniona.</p>
+
+                <p class="section__text--paragraph">Dzięki użyciu komputerów udało się pokazać, że hipoteza Goldbacha jest prawdziwa dla liczb naturalnych mniejszych niż <span class="section__text--math">4 · 10<sup>17</sup></span>  (przez przedstawienie każdej z tych liczb w postaci sumy dwóch liczb pierwszych). Co więcej, większość współczesnych matematyków uważa, iż jest ona prawdziwa, ponieważ ze względu na stosunkowo gęsty rozkład liczb pierwszych wydaje się, że większe liczby parzyste coraz łatwiej jest przedstawić w postaci sumy dwóch liczb pierwszych.</p>
+
+                <p class="section__text--paragraph">Pomimo licznych prób oraz wysokich nagród finansowych ufundowanych za jej udowodnienie lub obalenie, hipoteza Goldbacha pozostaje do dnia dzisiejszego nierozstrzygnięta. Do chwili obecnej udowodniono jedynie, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma co najwyżej sześciu liczb pierwszych, a także, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma liczby pierwszej oraz liczby, która ma co najwyżej dwa czynniki pierwsze.</p>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/List Goldbach do Eulera.jpg" alt="List Christiana Goldbacha do Leonharda Eulera" class="section__figure__image">
+                <figcaption class="section__figure__description">List Christiana Goldbacha do Leonharda Eulera</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+
+                <img src="./images/Leonhard Euler.jpeg" alt="Zdjęcie Leonharda Eulera" class="section__figure__image">
+                <figcaption class="section__figure__description">Leonhard Euler</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">Wzory liczb pierwszych </h2>
+
+                <p class="section__text--paragraph">Na przestrzeni wieków wielu sławnych matematyków jak i zwykłych amatorów próbowało znaleźć wzory generujące w prosty sposób liczby pierwsze. Ideałem byłby wzór, z którego przy podstawianiu kolejnych liczb naturalnych ( bez żadnego ograniczenia ) otrzymywalibyśmy kolejne liczby pierwsze, ale wydaje się, że niemożliwe jest istnienie takiego wzoru. Takich wzorów doszukiwano się szczególnie wśród trójmianów kwadratowych. Adrien Marie Legendre znalazł wyrażenie: <span class="section__text--math">2n<sup>2</sup> + 29</span>. Dla n = 1, 2, 3,... 28 otrzymano 28 różnych liczb pierwszych. Również Leonhard Euler starał się wyprowadzić takie wyrażenia i znalazł dwa: <span class="section__text--math">n<sup>2</sup> -n + 41</span> w którym dla n = 1, 2, 3, ...., 40 otrzymamy 40 różnych liczb pierwszych oraz <span class="section__text--math">n<sup>2</sup> - 79n + 1601</span> dla którego można otrzymać aż 79 liczb pierwszych lecz 39 z tych liczb pierwszych się powtarza.</p>
+
+                <p class="section__text--paragraph">Poniżej przykłady innych wzór, które generują liczby pierwsze: </p>
+
+                <ul class="section__text--list">
+                    <li><span class="section__text--math">n<sup>2</sup> - 3n + 43</span> - 41 liczb pierwszych w tym 1 liczba powtarzająca się</li>
+                    <li><span class="section__text--math">n<sup>2</sup> - 5n + 47</span> - 42 liczby pierwsze w tym 2 liczby powtarzające się</li>
+                    <li><span class="section__text--math">n<sup>2</sup> - 81n + 1681</span> - 80 liczb pierwszych w tym 40 liczb powtarzających się</li>
+                    <li><span class="section__text--math">2n<sup>2</sup> - 116n + 1711</span> - 57 liczb pierwszych w tym 28 liczb powtarzających się</li>
+                    <li><span class="section__text--math">3n<sup>2</sup> - 135n + 1541</span> - 44 liczb pierwszych w tym 22 liczby powtarzające się</li>
+                    <li><span class="section__text--math">4n<sup>2</sup> - 166n + 1763</span> - 40 unikalnych liczb pierwszych</li>
+                    <li><span class="section__text--math">6n<sup>2</sup> - 354n + 5251</span> - 58 liczb pierwszych w tym 29 liczb powtarzających się</li>
+                    <li><span class="section__text--math">9n<sup>2</sup> - 249n + 1763</span> - 40 unikalnych liczb pierwszych</li>
+                </ul>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Adrien Marie Legrende.jpg" alt="Zdjęcie Adriene Marie Legrende" class="section__figure__image">
+                <figcaption class="section__figure__description">Adrien Marie Legrende</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">Twierdzenie Fermata o sumie dwóch kwadratów</h2>
+
+                <p class="section__text--paragraph">Kolejnym bardzo ciekawym twierdzeniem związanym z liczbami pierwszymi jest twierdzenie o sumie dwóch kwadratów. Twierdzenie te mówi o tym, że liczby pierwsze nieparzyste można podzielić na dwie grupy: pierwsza składa się z liczb, które przy dzieleniu przez 4 dają resztę 1, druga grupa składa się z liczb, które przy dzieleniu przez 4 dają resztę 3. Oznacza to, że liczby pierwsze można podzielić na dwie grupy, takie które można zapisać w postaci <span class="section__text--math">4k+1</span>, oraz takie które można zapisać w postaci <span class="section__text--math">4k+3</span>.</p>
+
+                <p class="section__text--paragraph">Twierdzenie mówi o tym, że: </p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Wszystkie liczby pierwsze postaci 4k+1 można przedstawić jako sumę dwóch kwadratów, i to tylko w jeden sposób oraz żadnej liczby pierwszej postaci 4k+3 nie można przedstawić w taki sposób.</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Przykłady takiego rozkładu: </p>
+
+                <ul class="section__text--list">
+                    <li><span class="section__text--math">5 = 1<sup>2</sup> + 2<sup>2</sup></span></li>
+                    <li><span class="section__text--math">13 = 2<sup>2</sup> + 3<sup>2</sup></span></li>
+                    <li><span class="section__text--math">17 = 1<sup>2</sup> + 4<sup>2</sup></span></li>
+                    <li><span class="section__text--math">29 = 2<sup>2</sup> + 5<sup>2</sup></span></li>
+                    <li><span class="section__text--math">37 = 1<sup>2</sup> + 6<sup>2</sup></span></li>
+                </ul>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Pierre de Fermat.png" alt="Zdjęcie Pierre de Fermat" class="section__figure__image">
+                <figcaption class="section__figure__description">Pierre de Fermat</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, licencja: Public Domain)</figcaption>
+            </figure>
+        </section>
+
+    <img src="./images/icons/arrow-side.svg" class="arrow-image closed" alt="Strzałka prowadząca na górę strony">  
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
+    </footer>
+    
+</body>
+
+</html>

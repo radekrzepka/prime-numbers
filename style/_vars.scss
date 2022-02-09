@@ -1,0 +1,37 @@
+$latoFont: 'Lato', sans-serif;
+$robotoFont:'Roboto Slab', serif;
+$mathFont: serif;
+
+$fontSize: 16px;
+
+$green: #037e51;
+$grey: #626161;
+$lightGrey: #747373;
+$white: #fff;
+$black: #000;
+$websiteBackground : #FCFCFC;
+$greyBackground: #F6F5FF;
+
+$laptopWidth: 1440px;
+$smallLaptopWidth: 1024px;
+$tabletWidth: 768px;
+$smallTabletWidth: 540px;
+$largePhoneWidth: 425px;
+$mediumPhoneWidth: 375px;
+$smallPhoneWidth: 320px;
+
+@mixin desktopWebstieMargin {
+    margin: 0 150px;
+}
+
+@mixin laptopWebsiteMargin {
+    margin: 0 75px;
+}
+
+@mixin smallLaptopWebsiteMargin {
+    margin: 0 40px;
+}
+
+@mixin noMargin {
+    margin: 0;
+}

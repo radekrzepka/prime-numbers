@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- main tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zastosowania liczb pierwszych</title>
+    <meta name="description" content="Strona opowiada o wielu ciekawych zagadnieniach związanych z liczbami pierwszymi, o rodzajch liczb pierwszych, algorytmach służących do ich szukania oraz ich występowaniu. Dowiedzieć się możesz również o wielu ciekawostkach oraz o tezach zwiazanych z liczbami pierwszymi. Zapraszam!">
+    <meta name="keywords" content="liczby pierwsze, rodzaje liczb pierwszych, algorytmy, algorytmy liczb pierwszych, zastosowanie liczb pierwszych, poszukiwania, poszukiwania liczb pierwszych, ciekawostki, ciekawostki o liczbach pierwszych, ciekawostki liczby pierwsze, rodzaje, rodzaje liczb, rodzaje liczb pierwszych, RSA"/>
+    <meta name="author" content="Radosław Rzepka"/>
+    <meta name="copyright" content="Copyright owner"/>
+
+    <!-- favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- script -->
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/hamburger-menu.js" defer></script>
+    <script src="./js/arrow.js" defer></script>
+
+    <!-- preload -->
+    <link rel="preload" as="image" href="./images/slider/slider-img1.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img2.jpg">
+    <link rel="preload" as="image" href="./images/slider/slider-img3.jpg">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation" id="navigation">
+            <a href="index.html"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <a href="ostronie.html" class="navigation__list__item--link">O stronie</a>
+                </li> 
+                <li class="navigation__list__item">
+                    <a href="rodzaje.html" class="navigation__list__item--link">Rodzaje</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="algorytmy.html" class="navigation__list__item--link">Algorytmy</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="zastosowania.html" class="navigation__list__item--link">Zastosowania</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="rozmieszczenie.html" class="navigation__list__item--link">Rozmieszczenie</a>
+                </li>
+                <li class="navigation__list__item">
+                    <a href="ciekawostki.html" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
+            </ul>
+            <div class="header__hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <a class="header__button" href="#rodzaje">Rodzaje liczb pierwszych</a>
+        <div class="header__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <img src="./images/icons/arrow.svg" alt="left arrow" class="header__arrow header__arrow--left">
+        <img src="./images/icons/arrow.svg" alt="right arrow" class="header__arrow header__arrow--right">
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="section__text">
+                <h1 class="section__text--main-header" id="zastosowania">Zastosowania</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--sidebar-header">RSA</h2>
+
+                <p class="section__text--paragraph">W 1977 roku trzej profesorowie z MIT (Massachusetts Institute of Technology) w USA, Ronald Rivest, Adi Shamir i Leonard Adleman opublikowali nowy rodzaj szyfrowania, którego nazwano od pierwszych liter ich nazwisk <strong>RSA</strong>. Algorytm RSA jest aktualnie jednym z najpopularniejszych asymetrycznych algorytmów kryptograficznych. Jego zastosowanie można znaleźć w szyfrowaniu wiadomości, w operacjach między bankami oraz w komunikatorach internetowych. </p>
+                    
+                <p class="section__text--paragraph">W tym momencie warto wyjaśnić czym różni się symetryczny system szyfrowania od niesymetrycznego. Symetryczny system szyfrowania to taki, w którym klucz szyfrujący pozwala zarówno szyfrować dane, jak również odszyfrowywać je. Jego wadą jest to, że konieczne jest ścisłe chronienie kluczy. Niesymetryczny algorytm jakim jest algorytm RSA charakteryzuje się tym, że występują w nim dwa klucze: publiczny, który umożliwia jedynie zaszyfrowanie danych i w żaden sposób nie ułatwia ich odczytanie dzięki czemu nie musi być chroniony. Drugim kluczem jest klucz prywatny, który służy jedynie do odczytywania informacji zakodowanych przy pomocy publicznego klucza. Klucz ten jednak musi być ściśle chroniony, ponieważ jego znajomość umożliwiłaby odczytanie zaszyfrowanej wiadomości.</p>
+
+                <p class="section__text--paragraph">Całym algorytm RSA można podzielić na kilka części: </p>
+
+                <ol class="section__text--list">
+                    <li>Wygenerowanie klucza publicznego oraz prywatnego.</li>
+                    <li>Zaszyfrowanie danych przy użyciu klucza publicznego oraz wysłanie zaszyfrowanych danych do adresata.</li>
+                    <li>Deszyfracja wiadomości za pomocą klucza prywatnego przez odbiorcę.</li>
+                </ol>
+
+                <h2 class="section__text--sidebar-header">Tworzenie klucza RSA</h2>
+
+                <table class="section__text__table">
+                    <tr>
+                        <td>p = 19 <br> q = 17</td>
+                        <td>Wybranie dwóch dowolnych liczb pierwszych. Dla przykładu będę korzystać z małych liczb pierwszych, aby ułatwić obliczenia. W rzeczywistości dla klucza 2048-bitowego, który jest aktualnie wykorzystywany, liczby te są rzędu 2<sup>2048</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Ø = 288</td>
+                        <td>Obliczamy funkcję Eulera Ø = (p - 1) * (q - 1): <br> Ø = (19 - 1) * (17 - 1) = 18 * 16 = 288</td>
+                    </tr>
+                    <tr>
+                        <td>n = 323</td>
+                        <td>Obliczamy moduł n = p * q: <br> n = 19 * 17 = 323</td>
+                    </tr>
+                    <tr>
+                        <td>e = 35</td>
+                        <td>Wyznaczamy wykładnik publiczny e, który jest względnie pierwszy wraz z Ø. Oznacza to, że NWD(e,Ø) powinno być 1. Liczba ta nie musi być pierwsza. Dla naszego Ø = 288, przykładem liczby spełniającej ten warunek jest e = 35</td>
+                    </tr>
+                    <tr>
+                        <td>d = 107</td>
+                        <td>Teraz wyznaczamy wykładnik prywatny, który ma być odwrotnością modulo Ø liczby e co oznacza, że <br>d * 35 mod 288 = 1 <br>Liczbą spełniającą ten warunek jest 107</td>
+                    </tr>
+                    <tr>
+                        <td>klucz publiczny [35, 323]</td>
+                        <td>Naszym kluczem publicznym są liczby: [e, n]</td>
+                    </tr>
+                    <tr>
+                        <td>klucz prywatny [107, 323]</td>
+                        <td>Naszym kluczem prywatnym są liczby: [d, n]</td>
+                    </tr>
+                </table>
+
+                <h2 class="section__text--sidebar-header">Szyfrowanie danych przy użyciu klucza publicznego</h2>
+
+                <table class="section__text__table">
+                    <tr>
+                        <td>e = 35 <br>n = 323</td>
+                        <td>Do zaszyfrowania użyjemy klucza publicznego w postaci liczb e i n, który zostaje wysłany przez adresata</td>
+                    </tr>
+                    <tr>
+                        <td>t = 36</td>
+                        <td>Aby zaszyfrować wiadomość należy zamienić znaki na liczby naturalne t. Liczby te muszą spełniać nierówność 0 &lt; t &lt; n. Osoba do której wysyłamy tę wiadomość musi również znać nasz sposób kodowania. Tym zajmują się oprogramowania które szyfrują i deszyfrują wiadomości, które posiada odbiorca i nadawca. Dla przykładu zaszyfrujmy literę b do której przypiszemy liczbę 36.</td>
+                    </tr>
+                    <tr>
+                        <td>c = 161</td>
+                        <td>Następnym krokiem jest wyznaczenie liczby c ze wzoru c = t<sup>e</sup> mod n <br> c = 36<sup>35</sup> mod 323 = 161</td>
+                    </tr>
+                </table>
+
+                <h2 class="section__text--sidebar-header">Deszyfracja danych przy użyciu klucza prywatnego</h2>
+
+                <table class="section__text__table">
+                    <tr>
+                        <td>c = 161 <br> d = 107 <br>n = 323</td>
+                        <td>Od adresata otrzymujemy zaszyfrowaną wiadomość c, oraz klucz prywatny w postaci liczb d i n </td>
+                    </tr>
+                    <tr>
+                        <td>t = 36</td>
+                        <td>Następnie należy wykonać operacje t = c<sup>d</sup> mod n, aby zdeszyfrować wiadomość <br> t = 161<sup>107</sup> mod 323 = 36</td>
+                    </tr>
+                    <tr>
+                        <td>36 &rightarrow; b</td>
+                        <td>Dzięki tej operacji oraz znając sposób kodowania przez adresata zamieniamy 36 na b</td>
+                    </tr>
+                </table>
+
+                <p class="section__text--paragraph">W 2009 roku grupie naukowców udało się złamać klucz o długości 768 bitów co trwało aż 2 lata, a wynik pracy algorytmów deszyfrujących zajął aż 5 TB danych! Aktualnie standardem jest klucz 2048 bitowy. Cała siła tego algorytmu tkwi w matematycznym problemie znalezienia dwóch podzielników dużej liczby, które po przemnożeniu dają w wyniku tę bardzo dużą liczbę. Dla komputerów mnożenie jest procesem szybkim, ale dzielenie już nie.</p>
+
+                <p class="section__text--paragraph">Najsłabszym ogniwem algorytmu RSA jest konieczność ochrony klucza prywatnego. Nie ważne jak bardzo matematycznie będzie skomplikowany klucz prywatny, jeżeli hackerowi uda się uzyskać do niego dostęp przy pomocy przejęcia kontroli nad serwerem to będzie w stanie przejąć i bez problemu odszyfrować zaszyfrowaną wiadomość. Jednak przy odpowiednich zabezpieczeniu wysłania klucza prywatnego rozszyfrowanie jest praktycznie niemożliwe. Całe bezpieczeństwo tego algorytmu opiera się na czasie. Współczesne szyfry kryptograficzne są tworzone w taki sposób, aby ich deszyfracja trwało nieskończenie długo i na tym polega siła. I tutaj pojawiają się komputery kwantowe.</p>
+
+                <p class="section__text--paragraph">Komputery kwantowe są dużo szybsze niż domowe komputery, a nawet serwery. Jak bardzo? Normalnemu komputerowi łamanie klucza 1024-bitowego zajęłoby około 1.5 miliona lat, ale temu samemu komputerowi złamanie klucza o długości 2048-bitów zajęłoby 4 miliardy razy dłużej. Aby uzmysłowić sobie jak długo by to trwało to licząc, że wszechświat ma ok. 13,7 miliardów lat, złamanie tego szyfru trwało by 500 000 razy dłużej! Jednakże czy komputery kwantowe są na tyle szybkie aby zagrozić szyfrowi RSA-2048? W 2015 roku eksperci oszacowali, że komputer kwantowy będzie potrzebował miliarda kubitów, aby złamać szyfrowanie oparte o RSA-2048 w 8 godzin! Aktualnie nowoczesne komputery kwantowe posiadają ok. 50-80 kubitów, jednakże przy obecnym tempie rozwoju technologicznego może minąć kilkanaście lub nawet kilka lata aby szyfr RSA-2048 nie był już bezpieczny.</p>
+
+                <p class="section__text--paragraph">Aktualnie szyfrowania 2048-bitowego używa się w bankowości online, komunikatorach internetowych, szyfrowaniu poczty lub plików. Przy złamaniu tego szyfru wszystkie transakcje bankowe będą możliwe do odszyfrowania. Jednakże rozwiązanie tego problemu jest bardzo proste, gdyż zwiększnie klucza z 2048-bitowego do 4096-bitowego będzie już niemożliwe do rozszyfrowania w rozsądnym czasie nawet dla nowoczesnych komputerów kwantowych.</p>
+
+                <p class="section__text--paragraph">Dla osób zaciekawionych tematem, możliwe jest sprawdzenie z jakiego klucza publicznego oraz z jakiego zabezpieczenia korzysta twój bank. Dla przykład bank PKO korzysta z wersji 2048-bitowej klucza publicznego RSA.</p>
+
+                <img src="./images/RSA certyfikat.png" alt="Zdjęcie certyfikatu z jakiego korzysta bank PKO" >
+            </div>
+            <figure class="section__figure">
+                <img src="./images/Ronald Rivest.jpg" alt="Zdjęcie Ronalda Rivesta" class="section__figure__image">
+                <figcaption class="section__figure__description">Ronald Rivest</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, autor: Ronald Rivest, licencja: CC BY-SA 4.0)</figcaption>
+
+                <img src="./images/Adi Shamir.jpg" alt="Zdjęcie Adi Shamira" class="section__figure__image">
+                <figcaption class="section__figure__description">Adi Shamir</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, autor: Duncan Hull, licencja: CC BY-SA 4.0)</figcaption>
+
+                <img src="./images/Leonard Adelman.jpg" alt="Zdjęcie Ronalda Rivesta" class="section__figure__image">
+                <figcaption class="section__figure__description">Leonard Adelman</figcaption>
+                <figcaption class="section__figure__description">(Źródło zdjęcia : Wikipedia Commons, autor: Leonard Adelman, licencja: CC BY-SA 3.0)</figcaption>
+            </figure>
+        </section>
+
+    <img src="./images/icons/arrow-side.svg" class="arrow-image closed" alt="Strzałka prowadząca na górę strony">  
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
+    </footer>
+    
+</body>
+
+</html>
