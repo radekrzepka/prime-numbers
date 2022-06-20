@@ -6,5 +6,5 @@ The website was created as part of the 13th edition of the "Seeing Mathematics" 
 - JavaScript
 
 ## Live
-https://radekrzepka.github.io/liczby_pierwsze/ <br>
+https://radekrzepka.github.io/prime-numbers/ <br>
 AGH hosting: https://home.agh.edu.pl/~zobmat/2021/rzepka_radoslaw/index.html
