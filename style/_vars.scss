@@ -1,5 +1,5 @@
-$latoFont: 'Lato', sans-serif;
-$robotoFont:'Roboto Slab', serif;
+$latoFont: "Lato", sans-serif;
+$robotoFont: "Roboto Slab", serif;
 $mathFont: serif;
 
 $fontSize: 16px;
@@ -9,8 +9,8 @@ $grey: #626161;
 $lightGrey: #747373;
 $white: #fff;
 $black: #000;
-$websiteBackground : #FCFCFC;
-$greyBackground: #F6F5FF;
+$websiteBackground: #fcfcfc;
+$greyBackground: #f6f5ff;
 
 $laptopWidth: 1440px;
 $smallLaptopWidth: 1024px;
@@ -21,17 +21,17 @@ $mediumPhoneWidth: 375px;
 $smallPhoneWidth: 320px;
 
 @mixin desktopWebstieMargin {
-    margin: 0 150px;
+	margin: 0;
 }
 
 @mixin laptopWebsiteMargin {
-    margin: 0 75px;
+	margin: 0;
 }
 
 @mixin smallLaptopWebsiteMargin {
-    margin: 0 40px;
+	margin: 0;
 }
 
 @mixin noMargin {
-    margin: 0;
+	margin: 0;
 }
